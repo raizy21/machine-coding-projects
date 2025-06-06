@@ -7,7 +7,7 @@ const Search = () => {
   // function to fetch data from the api and set the list and filteredList states
   const loadData = async () => {
     let data = await fetch(
-      "https://f4f31a87-b021-41fc-a580-71a3377c4d9d-00-1m0rds06vly3d.janeway.replit.dev/users."
+      "https://f4f31a87-b021-41fc-a580-71a3377c4d9d-00-1m0rds06vly3d.janeway.replit.dev/users"
     ); // data is fetched from the api
     data = await data.json(); // data is converted to json format
     setList(data); // set the list state with the fetched data
@@ -22,7 +22,7 @@ const Search = () => {
       setFilteredList(list); // reset filteredList to the original list
     } else {
       let filteredList = list.filter((x) => {
-        return x.first_name.toLowerCase().includes(value.toLowerCase());
+        return x.name.toLowerCase().includes(value.toLowerCase());
       }); // filter the list based on the input value
       setFilteredList(filteredList); // update the filteredList state with the filtered results
     }
@@ -35,12 +35,12 @@ const Search = () => {
   return (
     <div className="app">
       <h1>search filter</h1>
-      {/* <input
+      <input
         type="text"
         value={search}
         placeholder="enter search value"
         onChange={(e) => handleSearch(e.target.value)}
-      /> */}
+      />
 
       <ul>
         {filteredList.length > 0 ? (
