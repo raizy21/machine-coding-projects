@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.infinite-scroll-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center; /* Centers text horizontally */
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-item {
+  height: 250px;
+  width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.user-id {
+  font-size: 14px;
+  color: #333;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card-body {
+  font-size: 14px;
+  color: #555;
+}
