@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+/* center content (if needed) */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* center alignment for the carousel and its content */
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full height of the viewport */
+  position: relative;
+  overflow: hidden; /* ensures that images don't overflow */
+  background-color: #f4f4f4; /* light background color */
+}
+
+.img {
+  max-width: 100%; /* Ensures image never overflows horizontally */
+  max-height: 100%; /* Ensures image never overflows vertically */
+  object-fit: cover; /* Ensures the image covers the carousel area without distortion */
+}
+
+/* button styles */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4caf50; /* green color for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1; /* ensure buttons stay above the image */
+}
+
+/* left and right buttons */
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+/* hover effects */
+.carousel-button:hover {
+  background-color: #45a049; /* darker green on hover */
+}
+
+/* disabled button state */
+.carousel-button:disabled {
+  background-color: #ccc; /* grey for disabled state */
+  cursor: not-allowed;
+}
+
+/* center content (if needed) */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

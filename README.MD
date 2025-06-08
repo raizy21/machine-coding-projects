@@ -1,6 +1,6 @@
 # machine-coding-projects
 
-welcome to the **machine-coding-projects**, a collection of small react projects designed to demonstrate solutions to common ui and state-management challenges. this repository is intended as a learning resource and showcase of various patterns, techniques, and components in eeact.
+welcome to the **machine-coding-projects**, a collection of small react projects designed to demonstrate solutions to common ui and state-management challenges. this repository is intended as a learning resource and showcase of various patterns, techniques, and components in react.
 
 ---
 
