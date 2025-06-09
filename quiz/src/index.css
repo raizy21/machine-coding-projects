@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #ebe5a9;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* simplified header for the quiz title */
+h1 {
+  color: #333;
+  margin-bottom: 40px; /* give space between title and question */
+}
+
+/* styling for the question */
+h2 {
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+
+/* default styling for options */
+p {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hhighlight selected option with green color */
+.selected {
+  background-color: #d4edda; /* light green background */
+  border: 2px solid #28a745; /* green border */
+  color: #155724; /* dark green text */
+}
+
+/* hover effect on options */
+p:hover {
+  background-color: #e0e0e0;
+}
+
+/* button styling */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* quiz finished section styling */
+.quiz-finished {
+  text-align: center;
+  padding: 20px;
+}
