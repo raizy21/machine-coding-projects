@@ -26,12 +26,8 @@ const PhoneBook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (newContact.name && newContact.phone && newContact.email) {
-      setContacts([...contacts, newContact]);
-      setNewContact({ name: "", phone: "", email: "" });
-    } else {
-      alert("please fill in all fields");
-    }
+    setContacts([...contacts, { ...newContact }]);
+    setNewContact({ name: "", phone: "", email: "" });
   };
 
   const handleDelete = (index) => {

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+/* center the heading and input field */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 250px;
+  height: 35px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 0 auto;
+  display: block; /* centers the input field */
+  margin-bottom: 20px;
+}
+
+/* align task items and buttons */
+.task-item {
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-item p {
+  margin: 0;
+  flex: 1;
+  padding-right: 10px; /* adds space between the title and buttons */
+}
+
+/* edit button styling */
+.task-item button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* edit button - blue color */
+.task-item button:nth-child(2) {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-item button:nth-child(2):hover {
+  background-color: #0056b3;
+}
+
+/* delete button - red color */
+.task-item button:nth-child(3) {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-item button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+/* Board layout */
+.board {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.todo-col,
+.doing-col,
+.done-col {
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.todo-col {
+  background-color: beige;
+}
+
+.doing-col {
+  background-color: lightblue;
+}
+
+.done-col {
+  background-color: lightgreen;
+}
+
+.todo,
+.doing,
+.done {
+  width: 33%;
+  height: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
