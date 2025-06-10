@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+.heading {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  height: 50px; /* set fixed height */
+  width: 50px; /* set fixed width */
+  margin: 1px;
+  font-size: 24px;
+  display: flex; /* use flex to center content */
+  align-items: center; /* center content vertically */
+  justify-content: center; /* center content horizontally */
+}
+
+.winner {
+  font-size: 24px; /* larger font for winner announcement */
+  margin: 10px 0; /* space around the announcement */
+  text-align: center; /* center text */
+}
+
+.reset-container {
+  display: flex; /* flexbox for centering */
+  flex-direction: column; /* stack elements vertically */
+  align-items: center; /* center items horizontally */
+  margin-top: 20px; /* space above the reset button and winner announcement */
+}
+
+.reset-button {
+  padding: 10px 20px; /* padding for the button */
+  font-size: 16px; /* button font size */
+  cursor: pointer; /* change cursor to pointer */
+}
