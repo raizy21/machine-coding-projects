@@ -42,7 +42,7 @@ answer:
 - when you want predictable performance
 
   - when you need smooth interactions (e.g. dragging, scrolling) under heavy update loads.
-  - why the virtual dom abstracts away manual optimizations—React internally decides the most efficient way to reconcile changes.
+  - why the virtual dom abstracts away manual optimizations— react internally decides the most efficient way to reconcile changes.
 
 - when you’re writing declarative code
   - when you describe what the ui should look like for a given state, not how to mutate the dom step by step.
