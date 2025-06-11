@@ -1,4 +1,4 @@
-# what is react?
+# question: what is react?
 
 answer:
 
@@ -11,7 +11,7 @@ answer:
 - virtual dom - react keeps a lightweight copy of the real dom in memory. when your app’s state changes, react computes a minimal set of dom updates by diffing the new virtual dom against the old one, then batches those changes to update the real dom efficiently.
 - one-way data flow - data (“props” and component “state”) flows down the component tree, making the data flow predictable and easier to debug.
 
-when & why to use react
+### when & why to use react
 
 - building complex, interactive uis with many distinct, reusable pieces
 - projects that need highly dynamic data interactions (e.g., live feeds, dashboards)
