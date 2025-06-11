@@ -76,7 +76,7 @@ why sse useMemo?
    - useMemo is a powerful tool for performance optimization in react.
    - it prevents unnecessary recomputation of expensive operations, making your application more efficient by recalculating values only when required.
 
-### when & why to useMemo?
+### when & why to use useMemo?
 
 - expensive computations
 
