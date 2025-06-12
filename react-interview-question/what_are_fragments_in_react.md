@@ -31,7 +31,7 @@ import React from "react";
 - why maintains the correct html structure and prevents invalid nesting
 
 - when composing higher-order components or render props that inject additional elements
-- hy keeps the output clean and prevents unexpected styling or event behavior caused by extra dom nodes
+- why keeps the output clean and prevents unexpected styling or event behavior caused by extra dom nodes
 
 - when optimizing for minimal dom depth
 - why shallower dom trees can improve css performance and reduce the cost of dom operations during updates
